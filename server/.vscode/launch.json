@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Debug using Hotswap Agent",
+            "request": "launch",
+            "javaExec": "/home/mustafa/.vaadin/jdk/jbrsdk-21.0.6-linux-x64-b895.97/bin/java",
+            "mainClass": "com.crimson.demo.CrimsonApplication",
+            "vmArgs": "-XX:+AllowEnhancedClassRedefinition -XX:+ClassUnloading -XX:HotswapAgent=fatjar"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-CrimsonApplication<demo>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.crimson.demo.CrimsonApplication",
+            "projectName": "demo",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
